@@ -20,6 +20,16 @@
 ### yum update
 ### which man
 ### type -a ls
+## 安裝tomcat語法
+### yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel
+### java -version
+### yum -y install wget
+### wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.84/bin/apache-tomcat-9.0.84.zip
+### file apache-tomcat-9.0.84.zip
+### unzip apache-tomcat-9.0.84.zip
+### yum install zip
+### mv apache-tomcat-9.0.84 /opt/
+### systemctrl daemon-reload
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
@@ -27,7 +37,7 @@
 ### touch abc
 ### cp abc def.kkman
 ### cp -i abc def.kkman #複製時提示
-### ls -la #列出所有檔案
+### ls -la #列出所有檔案,包含隱藏檔
 ### ls -lai
 ### ls -lia
 ### ln -s abc pcman #建立檔案鏈結
@@ -57,6 +67,13 @@
 ### tail ESB_interface_201603301221.log -n 15
 ### head JavaThreadAnywhere.java
 ### head JavaThreadAnywhere.java -n 50
+## 更多的Bash Shell
+### ps -ef
+### ps -l
+### ps l
+### ps --forest
+### ps --version
+### top
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
