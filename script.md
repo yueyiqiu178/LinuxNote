@@ -42,6 +42,7 @@
 ### cp -i abc def.kkman #複製時提示
 ### ls -la #列出所有檔案,包含隱藏檔
 ### ls -lai
+### ls -liah #顯示檔案大小表示
 ### ls -lia
 ### ln -s abc pcman #建立檔案鏈結
 ### ls -lia
@@ -77,6 +78,30 @@
 ### ps --forest
 ### ps --version
 ### top
+### mount
+### df
+### df -h
+### du -h
+### df
+### df -h
+### sort -t ':' -k 3 -n /etc/passwd
+### du -sh * | sort -nr
+### du -sh *
+### du -sh
+### du -s
+### du -h
+### grep SingleThreadedSingleton SingleThreadedSingleton.java
+### grep -v SingleThreadedSingleton SingleThreadedSingleton.java
+### grep -n SingleThreadedSingleton SingleThreadedSingleton.java
+### grep -c SingleThreadedSingleton SingleThreadedSingleton.java
+### cat SingleThreadedSingleton.java
+### grep -e SingleThreadedSingleton -e someService SingleThreadedSingleton.java
+### grep [st] SingleThreadedSingleton.java
+### grep -n [st] SingleThreadedSingleton.java
+### tar -cvf test.tar io/
+### du io -sh
+### tar -tf test.tar
+### tar -xvf test.tar
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
