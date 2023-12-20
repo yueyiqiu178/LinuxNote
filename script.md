@@ -102,6 +102,36 @@
 ### du io -sh
 ### tar -tf test.tar
 ### tar -xvf test.tar
+## Shell相關
+### cat /etc/passwd
+### ls -lF /bin/bash
+### yum install file
+### file bash
+### type exit
+### type ps
+### type -a ps
+### alias -p
+### pwd ; ls ; cd /etc ; pwd ; cd ; pwd ; ls
+### echo $BASH_SUBSHELL
+### (pwd ; ls ; cd /etc ; pwd ; cd ; pwd ; ls)
+### echo $BASH_SUBSHELL
+### (pwd ; ls ; cd /etc ; pwd ; cd ; pwd ; ls)
+### ( pwd ; echo $BASH_SUBSHELL)
+### ( pwd ; (echo $BASH_SUBSHELL))
+### ps -f
+### sleep 3000&
+### jobs
+### jobs -l
+### (sleep 2 ; echo $BASH_SUBSHELL ; sleep 2)
+### (sleep 2 ; echo $BASH_SUBSHELL ; sleep 2)&
+### coproc sleep 10
+### jobs
+### coproc My_Job { sleep 10; }
+### coproc ( sleep 10; sleep 2 )
+### ps --forest
+### jobs -l
+### coproc ( sleep 10; sleep 2 )
+### ps --forest
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
