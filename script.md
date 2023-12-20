@@ -4,7 +4,7 @@
 ### docker run -itd --name mycentos centos:latest
 ### docker start mycentos
 ### docker exec -it mycentos /bin/bash
-## linux指令
+## 安裝man相關語法
 ### cat /etc/passwd
 ### whereis man
 ### locale #語系
@@ -20,21 +20,43 @@
 ### yum update
 ### which man
 ### type -a ls
+## 目錄檔案操作
 ### ls -F
 ### ls -l
 ### ls -l pro*
 ### touch abc
 ### cp abc def.kkman
-### ls -la
+### cp -i abc def.kkman #複製時提示
+### ls -la #列出所有檔案
 ### ls -lai
 ### ls -lia
-### ln -s abc pcman
+### ln -s abc pcman #建立檔案鏈結
 ### ls -lia
 ### vim abc
 ### ln abc kkman
 ### ls -l
 ### ls -lia
 ### ls -li
+### touch fall
+### mv fall fzll
+### mkdir pictures
+### mv fall pictures/
+### ls -li pictures/
+### mv -i pictures/fall ./
+### rm -i fall
+### mkdir -p New_Dir/Sub_Dir/Under_Dir
+### rm -rf New_Dir/
+### file WTSTMeasureDemo.java
+### cat WTSTMeasureDemo.java -n
+### cat WTSTMeasureDemo.java -b
+### more bashrc 
+### less bashrc
+### cat ESB_interface_201603301221.log
+### more ESB_interface_201603301221.log
+### tail ESB_interface_201603301221.log
+### tail ESB_interface_201603301221.log -n 15
+### head JavaThreadAnywhere.java
+### head JavaThreadAnywhere.java -n 50
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
