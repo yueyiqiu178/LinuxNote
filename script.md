@@ -2,8 +2,11 @@
 ## 啟動docker指令
 ### docker images
 ### docker run -itd --name mycentos centos:latest
+### docker run -itd --privileged=true --name mycentos2 centos:latest /usr/sbin/init
 ### docker start mycentos
+### docker start mycentos2
 ### docker exec -it mycentos /bin/bash
+### docker exec -it mycentos2 /bin/bash
 ## 安裝man相關語法
 ### cat /etc/passwd
 ### whereis man
