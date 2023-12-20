@@ -7,6 +7,34 @@
 ## linux指令
 ### cat /etc/passwd
 ### whereis man
+### locale #語系
+### locale -a
+### sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*
+### sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*
+### yum install man
+### rpm -qa|grep vim
+### yum -y install vim-enhanced
+### yum -y install man-pages
+### echo $MANPATH
+### export MANPATH=/usr/share/man
+### yum update
+### which man
+### type -a ls
+### ls -F
+### ls -l
+### ls -l pro*
+### touch abc
+### cp abc def.kkman
+### ls -la
+### ls -lai
+### ls -lia
+### ln -s abc pcman
+### ls -lia
+### vim abc
+### ln abc kkman
+### ls -l
+### ls -lia
+### ls -li
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
