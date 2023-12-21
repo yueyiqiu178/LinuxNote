@@ -157,7 +157,6 @@
 ### ps --forest
 ### pcman="Hello UUU"
 ### export pcman
-### set
 ### kkman="Hello thread"
 ### echo $kkman
 ### unset kkman
@@ -171,6 +170,36 @@
 ### printenv BASH_ENV
 ### cat /root/.bashrc
 ### vi /root/.bashrc
+### mytest=(one two three four five)
+### echo $mytest
+### echo ${mytest[2]}
+### echo ${mytest[*]}
+### mytest[2] = "Hello"
+### mytest[2]="Hello"
+### echo ${mytest[*]}
+### unset mytest[2]
+### echo ${mytest[*]}
+### echo ${mytest[2]}
+### echo ${mytest[3]}
+### unset mytest
+### echo ${mytest[*]}
+## 文件權限
+### cat /etc/passwd
+### cat /etc/shadow
+### cat /etc/default/useradd
+### ls -al /etc/skel
+### cat /etc/skel/.bashrc 
+### useradd -m test
+### useradd -D
+### grep test /etc/passwd
+### userdel test
+### grep test /etc/passwd
+### useradd -D -s /home/abcde
+### useradd -m kkman
+### userdel -r kkman
+### cat /etc/group
+### /usr/sbin/groupadd shared
+### tail /etc/group
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
