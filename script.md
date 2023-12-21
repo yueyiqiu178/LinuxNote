@@ -139,6 +139,38 @@
 ### history
 ### !!
 ### !201
+## 環境變數
+### printenv
+### env
+### printenv HOME
+### set #顯示所有環境變量
+### echo $HOME
+### cd $HOME
+### echo $my_variable
+### my_variable="Hello Taipei"
+### echo $my_variable
+### bash
+### echo $my_variable
+### my_variable="I am Global now"
+### export my_variable
+### echo $my_variable
+### ps --forest
+### pcman="Hello UUU"
+### export pcman
+### set
+### kkman="Hello thread"
+### echo $kkman
+### unset kkman
+### echo $kkman
+### exit
+### echo $PATH
+### PATH=$PATH:/tmp/apache-tomcat-9.0.84
+### echo $PATH
+### cat /etc/profile
+### ls -liah /etc/profile.d
+### printenv BASH_ENV
+### cat /root/.bashrc
+### vi /root/.bashrc
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
