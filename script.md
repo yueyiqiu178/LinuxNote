@@ -132,6 +132,13 @@
 ### jobs -l
 ### coproc ( sleep 10; sleep 2 )
 ### ps --forest
+### which ps #只顯示外部命令
+### type ps
+### type -a ps
+### history -a
+### history
+### !!
+### !201
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
