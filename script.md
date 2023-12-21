@@ -200,6 +200,14 @@
 ### cat /etc/group
 ### /usr/sbin/groupadd shared
 ### tail /etc/group
+### useradd -D -s /bin/bash
+### useradd -D
+### useradd -m kkman1
+### useradd -m kkman2
+### useradd -m kkman3
+### usermod -G shared kkman1
+### tail /etc/group
+### groupmod -n sharing shared
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
