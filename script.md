@@ -208,6 +208,22 @@
 ### usermod -G shared kkman1
 ### tail /etc/group
 ### groupmod -n sharing shared
+### umask
+### touch abc
+### mkdir newdir
+### chmod 777 abc
+### chmod 444 abc
+### chmod o+r abc
+### chmod o=u abc
+### chmod a=o abc
+### chmod a-x abc
+### chown kkman1 abc
+### chown kkman2.sharing abc
+### mkdir testdir
+### chgrp sharing testdir
+### chown kkman1 testdir
+### chmod g+s testdir
+### touch jjj
 ## 常見Linux目錄名稱
 ### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
 ### /bin 二進制目錄，存放許多用戶級的GNU工具
