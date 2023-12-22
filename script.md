@@ -7,6 +7,7 @@
 ### docker start mycentos2
 ### docker exec -it mycentos /bin/bash
 ### docker exec -it mycentos2 /bin/bash
+### docker exec -u kkman1 -it mycentos2 /bin/bash
 ## 安裝man相關語法
 ### cat /etc/passwd
 ### whereis man
@@ -41,6 +42,21 @@
 ### timedatectl list-timezones | grep Asia
 ### timedatectl set-timezone Asia/Taipei
 ### date -R
+### date > test6
+### date>>test6
+### date>>test6
+### date>>test6
+### cat test6 
+### wc<test6
+### wc << EOF
+### test string 1
+### test string 2
+### test string 3
+### EOF
+### rpm -qa > rpm.list
+### sort < rpm.list
+### rpm -qa | sort
+### rpm -qa | sort | more
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
