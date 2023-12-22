@@ -57,6 +57,8 @@
 ### sort < rpm.list
 ### rpm -qa | sort
 ### rpm -qa | sort | more
+### echo $?
+### expr 1 + 5
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
@@ -75,6 +77,7 @@
 ### ls -l
 ### ls -lia
 ### ls -li
+### ls -liah /home/kkman1/.b* #搜尋別的資料夾特定檔案
 ### touch fall
 ### mv fall fzll
 ### mkdir pictures
