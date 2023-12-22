@@ -33,6 +33,14 @@
 ### yum install zip
 ### mv apache-tomcat-9.0.84 /opt/
 ### systemctrl daemon-reload
+## 綜合操作
+### date -R
+### hwclock
+### hwclock -r
+### cal
+### timedatectl list-timezones | grep Asia
+### timedatectl set-timezone Asia/Taipei
+### date -R
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
