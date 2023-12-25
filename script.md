@@ -87,6 +87,7 @@
 ### rm -i fall
 ### mkdir -p New_Dir/Sub_Dir/Under_Dir
 ### rm -rf New_Dir/
+### rm -rf * #刪除某個目錄下所有檔案
 ### file WTSTMeasureDemo.java
 ### cat WTSTMeasureDemo.java -n
 ### cat WTSTMeasureDemo.java -b
