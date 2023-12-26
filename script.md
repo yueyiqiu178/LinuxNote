@@ -72,6 +72,14 @@
 ### mktemp -d dir.XXXXXX	#建立臨時目錄
 ### date | tee abcd	#T型管道
 ### date | tee -a abcd	#T型管道,附加
+### sh sig6.sh &	#背景執行
+### sh sig7.sh > sig7.out &	#背景執行
+### nohup sh sig6.sh &	#背景執行,不關閉process
+### jobs -l	#查看分配給shell的作業
+### kill -l | grep SIGHUP	#搜尋命令
+### kill -20 1046	#發送訊號給process
+### bg
+### fg
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
