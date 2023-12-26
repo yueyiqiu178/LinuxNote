@@ -64,6 +64,14 @@
 ### ls -al test badtest test2 2> test5
 ### ls -al test test2 test3 badtest 2> test6 1> test7	#STDOUT,STDERR都重定向
 ### ls -al test test2 test3 badtest &> test8	#STDOUT,STDERR都重定向
+### lsof -a -p $$ -d 0,1,2	#列出file descriptor
+### ls -al badfile test16 2> /dev/null	#吃掉錯誤訊息
+### cat /dev/null > testfile	#清除文件內容
+### mktemp testing.XXXXXX	#建立臨時檔案
+### mktemp -t test.XXXXXX	#建立臨時檔案
+### mktemp -d dir.XXXXXX	#建立臨時目錄
+### date | tee abcd	#T型管道
+### date | tee -a abcd	#T型管道,附加
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
@@ -257,23 +265,3 @@
 ### chown kkman1 testdir
 ### chmod g+s testdir
 ### touch jjj
-## 常見Linux目錄名稱
-### / 虛擬目錄的根目錄。通常不會在這裡存儲文件
-### /bin 二進制目錄，存放許多用戶級的GNU工具
-### /boot 啟動目錄，存放啟動文件
-### /dev 設備目錄，Linux在這裡創建設備節點
-### /etc 系統配置文件目錄
-### /home 主目錄，Linux在這裡創建用戶目錄
-### /lib 庫目錄，存放系統和應用程序的庫文件
-### /media 媒體目錄，可移動媒體設備的常用掛載點
-### /mnt 掛載目錄，另一個可移動媒體設備的常用掛載點
-### /opt 可選目錄，常用於存放第三方軟件包和數據文件
-### /proc 進程目錄，存放現有硬件及當前進程的相關信息
-### /root root用戶的主目錄
-### /sbin 系統二進制目錄，存放許多GNU管理員級工具
-### /run 運行目錄，存放系統運作時的運行時數據
-### /srv 服務目錄，存放本地服務的相關文件
-### /sys 系統目錄，存放系統硬件信息的相關文件
-### /tmp 臨時目錄，可以在該目錄中創建和刪除臨時工作文件
-### /usr 用戶二進制目錄，大量用戶級的GNU工具和數據文件都存儲在這裡
-### /var 可變目錄，用以存放經常變化的文件，比如日志文件
