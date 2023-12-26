@@ -59,6 +59,11 @@
 ### rpm -qa | sort | more
 ### echo $?
 ### expr 1 + 5
+### getopt ab:cd -a -b test1 -cd test2 test3 #顯示命令行選項參數與實際參數列表
+### ls -al badfile 2> test4	#錯誤訊息重定向
+### ls -al test badtest test2 2> test5
+### ls -al test test2 test3 badtest 2> test6 1> test7	#STDOUT,STDERR都重定向
+### ls -al test test2 test3 badtest &> test8	#STDOUT,STDERR都重定向
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
