@@ -105,14 +105,14 @@
 ### gawk -F: -f script.gawk /etc/passwd
 ### gawk -F: -f script2.gawk /etc/passwd
 ### gawk 'BEGIN {print "Hello World!"}'
-### 
+&emsp; 
 ### gawk 'BEGIN {print "The data3 File Contents:"}
 ### {print $0}' data3.txt
-### 
+&emsp; 
 ### gawk 'BEGIN {print "The data3 File Contents:"}
 ### {print $0}
 ### END {print "End of File"}' data3.txt
-### 
+&emsp; 
 ### gawk -f script3.gawk /etc/passwd
 ### sed 's/test/trial/' data4.txt
 ### sed 's/test/trial/2' data4.txt
@@ -127,17 +127,17 @@
 ### sed '2,3s/dog/cat/' data1.txt
 ### sed '2,$s/dog/cat/' data1.txt
 ### sed '/kkman1/s/bash/csh/' /etc/passwd
-### 
+&emsp; 
 ### sed '2{
 ### s/fox/elephant/
 ### s/dog/cat/
 ### }' data1.txt
-### 
+&emsp; 
 ### sed '3,${
 ### s/brown/green/
 ### s/lazy/active/
 ### }' data1.txt
-### 
+&emsp; 
 ### sed 'd' data1.txt
 ### sed '3d' data6.txt
 ### sed '3d' data6.txt
@@ -148,63 +148,62 @@
 ### sed '/1/,/5/d' data7.txt
 ### echo "Test Line 2" | sed 'i\Test Line 1'
 ### echo "Test Line 2" | sed 'a\Test Line 1'
-### 
+&emsp; 
 ### echo "Test Line 2" | sed 'i\
 ### Test Line 1'
-### 
-### 
+&emsp; 
 ### sed '3i\
 ### This is an inserted line.' data6.txt
-### 
+&emsp; 
 ### sed '$a\
 ### This is a new line of text.' data6.txt
-### 
+&emsp; 
 ### sed 'a\
 ### This is a new line of text.' data6.txt
-### 
+&emsp; 
 ### sed '1i\
 ### This is a new line of text.' data6.txt
-### 
+&emsp; 
 ### sed '$i\
 ### This is one line of new text.\
 ### This is another line of new text.' data6.txt
-### 
+&emsp;
 ### sed '1i\
 ### This is one line of new text.\
 ### This is another line of new text.' data6.txt
-### 
+&emsp; 
 ### sed '3c\
 ### This is a changed line of text.' data6.txt
-### 
+&emsp; 
 ### sed '/number 3/c\
 ### This is a changed line of text.' data6.txt
-### 
+&emsp; 
 ### sed '/number 1/c\
 ### This is a changed line of text.' data8.txt
-### 
+&emsp; 
 ### sed '2,3c\
 ### This is a new line of text.' data6.txt
-### 
+&emsp; 
 ### sed 'y/123/789/' data8.txt
-### 
+&emsp; 
 ### echo "This 1 is a test of 1 try." | sed 'y/123/456/'
 ### echo "this is a test" | sed 'p'
 ### echo "this is a test" | sed -n 'p'
 ### sed -n '/number 3/p' data6.txt
 ### sed -n '2,3p' data6.txt
-### 
+&emsp; 
 ### sed -n '/3/{
 ### p
 ### s/line/test/p
 ### }' data6.txt
-### 
+&emsp; 
 ### sed '=' data1.txt
-### 
+&emsp; 
 ### sed -n '/number 4/{
 ### =
 ### p
 ### }' data6.txt
-### 
+&emsp; 
 ### sed -n 'l' data9.txt
 ### sed -n 'l' data10.txt
 ### sed '1,2w test2.txt' data6.txt
@@ -214,7 +213,7 @@
 ### sed '$r data12.txt' data6.txt
 ### sed 'lr data12.txt' data6.txt
 ### sed '1r data12.txt' data6.txt
-### 
+&emsp; 
 ### sed '/LIST/{
 ### r data11.txt
 ### d
