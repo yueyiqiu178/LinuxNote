@@ -1,4 +1,4 @@
-# MaxQiu Linux Script Note
+# MaxQiu Linux_Command_Line_Note
 ## 啟動docker指令
 ### docker images
 ### docker run -itd --name mycentos centos:latest
@@ -97,11 +97,11 @@
 ### gawk '{print $1}' data2.txt
 ### gawk -F: '{print $1}' /etc/passwd
 ### echo "My name is Rich" | gawk '{$4="Christine"; print $0}'
-### 
+&emsp;
 ### gawk '{
 ### $4="Christine"
 ### print $0}'
-### 
+&emsp;
 ### gawk -F: -f script.gawk /etc/passwd
 ### gawk -F: -f script2.gawk /etc/passwd
 ### gawk 'BEGIN {print "Hello World!"}'
