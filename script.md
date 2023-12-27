@@ -90,9 +90,135 @@
 ### atrm 2
 ### yum install cronie
 ### crontab -l
+## Sed,gawk
 ### sed 's/dog/cat/' data1.txt
 ### sed -e 's/brown/green/; s/dog/cat/' data1.txt
 ### sed -f script.sed data1.txt
+### gawk '{print $1}' data2.txt
+### gawk -F: '{print $1}' /etc/passwd
+### echo "My name is Rich" | gawk '{$4="Christine"; print $0}'
+### 
+### gawk '{
+### $4="Christine"
+### print $0}'
+### 
+### gawk -F: -f script.gawk /etc/passwd
+### gawk -F: -f script2.gawk /etc/passwd
+### gawk 'BEGIN {print "Hello World!"}'
+### 
+### gawk 'BEGIN {print "The data3 File Contents:"}
+### {print $0}' data3.txt
+### 
+### gawk 'BEGIN {print "The data3 File Contents:"}
+### {print $0}
+### END {print "End of File"}' data3.txt
+### 
+### gawk -f script3.gawk /etc/passwd
+### sed 's/test/trial/' data4.txt
+### sed 's/test/trial/2' data4.txt
+### sed 's/test/trial/1' data4.txt
+### sed 's/test/trial/g' data4.txt
+### sed -n 's/test/trial/p' data5.txt
+### sed 's/test/trial/p' data5.txt
+### sed -n 's/test/trial/p' data5.txt
+### sed 's/test/trial/w test.txt' data5.txt
+### sed 's/\/bin\/bash/\/bin\/csh/' /etc/passwd
+### sed '2s/dog/cat/' data1.txt
+### sed '2,3s/dog/cat/' data1.txt
+### sed '2,$s/dog/cat/' data1.txt
+### sed '/kkman1/s/bash/csh/' /etc/passwd
+### 
+### sed '2{
+### s/fox/elephant/
+### s/dog/cat/
+### }' data1.txt
+### 
+### sed '3,${
+### s/brown/green/
+### s/lazy/active/
+### }' data1.txt
+### 
+### sed 'd' data1.txt
+### sed '3d' data6.txt
+### sed '3d' data6.txt
+### sed '2,3d' data6.txt
+### sed '3,$d' data6.txt
+### sed '/number 1/d' data6.txt
+### sed '/1/,/3/d' data7.txt
+### sed '/1/,/5/d' data7.txt
+### echo "Test Line 2" | sed 'i\Test Line 1'
+### echo "Test Line 2" | sed 'a\Test Line 1'
+### 
+### echo "Test Line 2" | sed 'i\
+### Test Line 1'
+### 
+### 
+### sed '3i\
+### This is an inserted line.' data6.txt
+### 
+### sed '$a\
+### This is a new line of text.' data6.txt
+### 
+### sed 'a\
+### This is a new line of text.' data6.txt
+### 
+### sed '1i\
+### This is a new line of text.' data6.txt
+### 
+### sed '$i\
+### This is one line of new text.\
+### This is another line of new text.' data6.txt
+### 
+### sed '1i\
+### This is one line of new text.\
+### This is another line of new text.' data6.txt
+### 
+### sed '3c\
+### This is a changed line of text.' data6.txt
+### 
+### sed '/number 3/c\
+### This is a changed line of text.' data6.txt
+### 
+### sed '/number 1/c\
+### This is a changed line of text.' data8.txt
+### 
+### sed '2,3c\
+### This is a new line of text.' data6.txt
+### 
+### sed 'y/123/789/' data8.txt
+### 
+### echo "This 1 is a test of 1 try." | sed 'y/123/456/'
+### echo "this is a test" | sed 'p'
+### echo "this is a test" | sed -n 'p'
+### sed -n '/number 3/p' data6.txt
+### sed -n '2,3p' data6.txt
+### 
+### sed -n '/3/{
+### p
+### s/line/test/p
+### }' data6.txt
+### 
+### sed '=' data1.txt
+### 
+### sed -n '/number 4/{
+### =
+### p
+### }' data6.txt
+### 
+### sed -n 'l' data9.txt
+### sed -n 'l' data10.txt
+### sed '1,2w test2.txt' data6.txt
+### sed -n '/Browncoat/w Browncoats.txt' data11.txt
+### sed '3r data12.txt' data6.txt
+### sed '/number 2/r data12.txt' data6.txt
+### sed '$r data12.txt' data6.txt
+### sed 'lr data12.txt' data6.txt
+### sed '1r data12.txt' data6.txt
+### 
+### sed '/LIST/{
+### r data11.txt
+### d
+### }' notice.std
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
