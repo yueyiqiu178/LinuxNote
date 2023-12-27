@@ -80,6 +80,19 @@
 ### kill -20 1046	#發送訊號給process
 ### bg
 ### fg
+### systemctl start atd
+### ps -o pid,ppid,ni,cmd
+### nice -n -10 sh sig7.sh > sig7.out &
+### renice -n 8 -p 139
+### renice -n 8 -p 139
+### at -f ./at.sh now
+### atq
+### atrm 2
+### yum install cronie
+### crontab -l
+### sed 's/dog/cat/' data1.txt
+### sed -e 's/brown/green/; s/dog/cat/' data1.txt
+### sed -f script.sed data1.txt
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
