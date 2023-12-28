@@ -229,6 +229,19 @@
 ### r data11.txt
 ### d
 ### }' notice.std
+## sed advanced
+### sed '/^$/d' data1.txt
+### sed '/header/{n ; d}' data1.txt
+### sed '/first/{ N ; s/\n/ / }' data2.txt
+### sed 'N ; s/System Administrator/Desktop User/' data3.txt
+### sed 'N ; s/System.Administrator/Desktop User/' data3.txt
+### sed 'N;s/System\nAdministrator/Desktop\nUser/;s/System Administrator/Desktop User/' data3.txt
+### sed 'N;s/System\nAdministrator/Desktop\nUser/;s/System Administrator/Desktop User/' data4.txt
+### sed 's/System Administrator/Desktop User/;N;s/System\nAdministrator/Desktop\nUser/' data4.txt
+### sed 'N ; /System\nAdministrator/d' data4.txt
+### sed 'N ; /System\nAdministrator/D' data4.txt
+### sed '/^$/{N ; /header/D}' data5.txt
+### sed -n 'N ; /System\nAdministrator/P' data3.txt
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
