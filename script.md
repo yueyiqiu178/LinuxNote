@@ -311,6 +311,15 @@
 ### gawk -F: '$4 == 0{print $1}' /etc/passwd
 ### gawk -F, '$1 == "data"{print $1}' data1
 ### gawk -F, '$1 == "data11"{print $1}' data1
+### gawk '{if ($1 > 20) print $1}' data4
+### gawk -f if.gawk data4
+### gawk -f if2.gawk data4
+### gawk '{if ($1 > 20) print $1 * 2; else print $1 / 2}' data4
+### gawk -f while.gawk data5
+### gawk -f while.gawk data5
+### gawk -f break.gawk data5
+### gawk -f dowhile.gawk data5
+### gawk -f for.gawk data5
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
