@@ -190,9 +190,11 @@
 &emsp; 
 ### sed '/number 1/c\
 ### This is a changed line of text.' data8.txt
+### sed '/number 1/c\This is a changed line of text.' data8.txt
 &emsp; 
 ### sed '2,3c\
 ### This is a new line of text.' data6.txt
+### sed '2,3c\This is a new line of text.' data6.txt
 &emsp; 
 ### sed 'y/123/789/' data8.txt
 ### echo "This 1 is a test of 1 try." | sed 'y/123/456/'
@@ -221,6 +223,7 @@
 ### sed -n '/Browncoat/w Browncoats.txt' data11.txt
 ### sed '3r data12.txt' data6.txt
 ### sed '/number 2/r data12.txt' data6.txt
+### sed -e '/number 2/{r data12.txt' -e  'd;}' data6.txt
 ### sed '$r data12.txt' data6.txt
 ### sed 'lr data12.txt' data6.txt
 ### sed '1r data12.txt' data6.txt
@@ -229,6 +232,8 @@
 ### r data11.txt
 ### d
 ### }' notice.std
+### sed -e '/LIST/{r data11.txt' -e 'd;}' notice.std
+&emsp; 
 ## sed advanced
 ### sed '/^$/d' data1.txt
 ### sed '/header/{n ; d}' data1.txt
