@@ -242,6 +242,37 @@
 ### sed 'N ; /System\nAdministrator/D' data4.txt
 ### sed '/^$/{N ; /header/D}' data5.txt
 ### sed -n 'N ; /System\nAdministrator/P' data3.txt
+### sed -n '/first/ {h ; p ; n ; p ; g ; p }' data2.txt
+### sed -n '/first/ {h ; n ; p ; g ; p }' data2.txt
+### sed -n '/header/!p' data2.txt
+### sed '$!N;s/System\nAdministrator/Desktop\nUser/;s/System Administrator/Desktop User/' data4.txt
+### sed -n '{1!G ; h ; $p }' data2.txt
+### sed '{2,3b ; s/This is/Is this/ ; s/line./test?/}' data2.txt
+### sed '{/first/b jump1 ; s/This is the/No jump on/;:jump1;s/This is the/Jump here on/}' data2.txt
+### echo "This, is, a, test, to, remove, commas." | sed -n '{:start;s/,//1p; b start}'
+### echo "This, is, a, test, to, remove, commas." | sed -n '{:start;s/,//1p;/,/b start}'
+### sed '{s/first/matched/;t;s/This is the/No match on/}' data2.txt
+### echo "This, is, a, test, to, remove, commas. " | sed -n '{:start;s/,//1p;t start}'
+### echo "The cat sleeps in his hat." | sed 's/cat/"cat"/'
+### echo "The cat sleeps in his hat." | sed 's/.at/".at"/g'
+### echo "The cat sleeps in his hat." | sed 's/.at/"&"/g'
+### echo "The System Administrator manual" | sed 's/\(System\) Administrator/\1 User/'
+### echo "That furry cat is pretty" | sed 's/furry \(.at\)/\1/'
+### echo "That furry hat is pretty" | sed 's/furry \(.at\)/\1/'
+### echo "1234567" | sed '{:start;s/\(.*[0-9]\)\([0-9]\{3\}\)/\1,\2/;t start}'
+### sed 'G' data2.txt
+### sed '$!G' data2.txt
+### sed '$!G' data6.txt
+### sed '/^$/d ; $!G' data6.txt
+### sed '=' data2.txt
+### sed '=' data2.txt | sed 'N; s/\n/ /'
+### sed -n '$p' data2.txt
+### sed '{:start;$q ; N ; 11,$D;b start}' data7.txt	#待釐清
+### sed '/./,/^$/!d' data8.txt
+### sed '/./,$!d' data9.txt
+### sed '{:start;/^\n*$/{$d ; N ; b start }}' data10.txt	#待釐清
+### sed 's/<[^>]*>//g' data11.txt
+### sed 's/<[^>]*>//g ; /^$/d' data11.txt
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
