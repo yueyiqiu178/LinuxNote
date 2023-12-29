@@ -273,6 +273,44 @@
 ### sed '{:start;/^\n*$/{$d ; N ; b start }}' data10.txt	#待釐清
 ### sed 's/<[^>]*>//g' data11.txt
 ### sed 's/<[^>]*>//g ; /^$/d' data11.txt
+## gawk advanced
+### gawk 'BEGIN{FS=","} {print $1,$2,$3}' data1
+### gawk 'BEGIN{FS=","; OFS="-"} {print $1,$2,$3}' data1
+### gawk 'BEGIN{FS=","; OFS="--"} {print $1,$2,$3}' data1
+### gawk 'BEGIN{FS=","; OFS="<-->"} {print $1,$2,$3}' data1
+### gawk 'BEGIN{FIELDWIDTHS="3 5 2 5"}{print $1,$2,$3,$4}' data1b
+### gawk 'BEGIN{FS="\n"; RS=""} {print $1,$4}' data2
+### gawk 'BEGIN{print ARGC,ARGV[1]}' data1
+### gawk 'BEGIN{print ARGC,ARGV[0]}' data1
+### gawk 'BEGIN{print ENVIRON["HOME"];print ENVIRON["PATH"]}'
+### gawk 'BEGIN{FS=","}{print $1,"FNR="FNR}' data1 data1
+### gawk 'BEGIN{FS=","}{print $1,"FNR@@="FNR}' data1 data1
+### gawk 'BEGIN {FS=","}{print $1,"FNR="FNR,"NR="NR}END{print "There were",NR,"records processed"}' data1 data1
+### gawk 'BEGIN{testing="This is a test";print testing}'
+### gawk 'BEGIN{testing="This is a test";print testing;testing=45;print testing}'
+### gawk 'BEGIN{x=4; x= x * 2 + 3; print x}'
+### gawk -f script1.gawk n=2 data1
+### gawk -f script1.gawk n=2 data1
+### gawk -f script1.gawk n=3 data1
+### gawk -f script2.gawk n=3 data1
+### gawk -v n=3 -f script2.gawk data1
+### gawk -f script2.gawk n=3 data1
+### gawk 'BEGIN{capital["Illinois"] = "Springfield";print capital["Illinois"]}'
+### gawk 'BEGIN{var[1] = 34;var[2] = 3;total = var[1] + var[2];print total}'
+### gawk -f map.gawk 
+### gawk -f array_delete.gawk 
+### gawk 'BEGIN{FS=","} /11/{print $1}' data1
+### gawk 'BEGIN{FS=","} {print $1}' data1
+### gawk 'BEGIN{FS=","} /,d/{print $1}' data1
+### gawk 'BEGIN{FS=","}{print $1}' data1
+### gawk 'BEGIN{FS=","} $2 ~ /^data2/{print $0}' data1
+### gawk -F: '$1 !~ /rich/{print $1,$NF}' /etc/passwd
+### gawk -F: '$1 ~ /rich/{print $1,$NF}' /etc/passwd
+### gawk -F: '$1 !~ /kkman/{print $1,$NF}' /etc/passwd
+### gawk -F: '$1 ~ /kkman/{print $1,$NF}' /etc/passwd
+### gawk -F: '$4 == 0{print $1}' /etc/passwd
+### gawk -F, '$1 == "data"{print $1}' data1
+### gawk -F, '$1 == "data11"{print $1}' data1
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
