@@ -8,6 +8,8 @@
 ### docker exec -it mycentos /bin/bash
 ### docker exec -it mycentos2 /bin/bash
 ### docker exec -u kkman1 -it mycentos2 /bin/bash
+## 安裝kubernetes相關語法
+### yum install -y kubelet kubeadm kubectl
 ## 安裝man相關語法
 ### cat /etc/passwd
 ### whereis man
