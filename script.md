@@ -325,6 +325,17 @@
 ### gawk -f break.gawk data5
 ### gawk -f dowhile.gawk data5
 ### gawk -f for.gawk data5
+### gawk 'BEGIN{FS="\n"; RS=""} {printf "%s %s\n", $1, $4}' data2
+### gawk 'BEGIN{FS=","} {printf "%s ", $1} END{printf "\n"}' data1
+### gawk 'BEGIN{FS="\n"; RS=""} {printf "%16s %s\n", $1, $4}' data2
+### gawk 'BEGIN{FS="\n"; RS=""} {printf "%-16s %s\n", $1, $4}' data2
+### gawk -f printf2.gawk data5
+### gawk 'BEGIN{x=exp(100); print x}'
+### gawk 'BEGIN{x=exp(1000); print x}'
+### gawk 'BEGIN{x = "testing"; print toupper(x); print length(x) }'
+### gawk -f asort.gawk
+### gawk -f split.gawk data1
+### gawk -f time.gawk data1
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
