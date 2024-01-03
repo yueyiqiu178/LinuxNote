@@ -336,6 +336,9 @@
 ### gawk -f asort.gawk
 ### gawk -f split.gawk data1
 ### gawk -f time.gawk data1
+### gawk -f func.gawk data2
+### gawk -f funclib -f script4.gawk data2
+### sh bowling.sh 
 ## 目錄檔案操作
 ### ls -F
 ### ls -l
