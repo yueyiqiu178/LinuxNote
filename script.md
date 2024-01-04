@@ -92,6 +92,7 @@
 ### atrm 2
 ### yum install cronie
 ### crontab -l
+### cat /etc/redhat-release #查看centos版本
 ## Sed,gawk
 ### sed 's/dog/cat/' data1.txt
 ### sed -e 's/brown/green/; s/dog/cat/' data1.txt
