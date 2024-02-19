@@ -8,6 +8,8 @@
 ### docker exec -it mycentos /bin/bash
 ### docker exec -it mycentos2 /bin/bash
 ### docker exec -u kkman1 -it mycentos2 /bin/bash
+### docker run -d -P --name Mariadb_Master -e MYSQL_ROOT_PASSWORD=123456 mariadb
+### docker exec -it 76a0031d9f65 bash
 ## 安裝kubernetes相關語法
 ### yum install -y kubelet kubeadm kubectl
 ## 安裝man相關語法
